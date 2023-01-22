@@ -95,7 +95,7 @@ export const Home = () => {
 
                         </div>
                     </section>
-
+ {/*
                     <section id="resume" className="resume">
                         <div className="container">
 
@@ -500,7 +500,7 @@ export const Home = () => {
                         </div>
                     </section> */}
 
-                    <section id="contact" className="contact">
+                    {/* <section id="contact" className="contact">
                         <div className="container">
 
                             <div className="section-title">
@@ -577,7 +577,7 @@ export const Home = () => {
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
 
                 </div>
             </div >

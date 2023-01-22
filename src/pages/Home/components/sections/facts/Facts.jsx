@@ -1,9 +1,18 @@
 import CountUp from 'react-countup';
-import { BiHappyBeaming } from 'react-icons/Bi';
+
 import "./facts.css";
 
 export const Facts = () => {
+
+    const stackeholders =185;
+    const projects = 25;
+    const supportHours = 1820;
+    const teams = 6;
+
+    const calculateDelay = (hours, countTime) => countTime / hours;
+
     return (
+
         <section id="facts" className="facts">
             <div className="container">
 
@@ -13,24 +22,17 @@ export const Facts = () => {
                         y necesita son de suma importancia, siendo estas habilidaddes que he venido fortaleciendo en varios factores
                         principales siempre con la busqueda de la felicidad del cliente.</p>
                 </div>
-
                 <div className="row no-gutters">
 
                     <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
                         <div className="count-box">
-                            <span data-toggle="counter-up">
-                                <CountUp
-                                    end={210}
-                                    duration={1}
-                                />
-                                  {({ countUpRef, start }) => (
-                                <div>
-                                    <span ref={countUpRef} />
-                                    <button onClick={start}>Start</button>
-                                </div>
-                            )}
-                            </span>
-                          
+                            <CountUp
+                                end={stackeholders}
+                                duration={calculateDelay(stackeholders,100)}
+                                delay={-1}
+                                enableScrollSpy={true}
+                                suffix={'+'}
+                            />
                             <p><strong>Stakeholders Felices</strong> <br /> Y vienen más!</p>
                         </div>
                     </div>
@@ -38,7 +40,12 @@ export const Facts = () => {
                     <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
                         <div className="count-box">
                             <i className="icofont-document-folder"></i>
-                            <span data-toggle="counter-up">21</span>
+                            <CountUp
+                                end={projects}
+                                duration={1}
+                                delay={-1}
+                                enableScrollSpy={true}
+                            />
                             <p><strong>Projectos</strong> <br /> y vamos por más!</p>
                         </div>
                     </div>
@@ -46,7 +53,12 @@ export const Facts = () => {
                     <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
                         <div className="count-box">
                             <i className="icofont-live-support"></i>
-                            <span data-toggle="counter-up">1,463</span>
+                            <CountUp
+                                end={supportHours}
+                                duration={calculateDelay(supportHours,1500)}
+                                enableScrollSpy={true}
+                                separator={','}
+                            />
                             <p><strong>Horas de soporte</strong><br /> Escuchando activamente</p>
                         </div>
                     </div>
@@ -54,7 +66,11 @@ export const Facts = () => {
                     <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
                         <div className="count-box">
                             <i className="icofont-users-alt-5"></i>
-                            <span data-toggle="counter-up">10</span>
+                            <CountUp
+                                end={teams}
+                                duration={calculateDelay(teams, 1)}
+                                enableScrollSpy={true}
+                            />
                             <p><strong>Equipos de trabajo</strong><br /> Adaptarse y dar lo mejor</p>
                         </div>
                     </div>
@@ -63,5 +79,6 @@ export const Facts = () => {
 
             </div>
         </section>
+
     )
 }

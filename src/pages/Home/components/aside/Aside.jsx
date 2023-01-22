@@ -6,14 +6,14 @@ export const Aside = () => {
         <header id='header'>
             <div className='d-flex flex-column'>
                 <div className='profile mt-2'>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
+                    <div className="flip-card">
+                        <div className="flip-card-inner">
+                            <div className="flip-card-front">
 
                                 <img src='src\assets\images\profile-img.jpg' className='img-fluid rounded-circle' alt='' />
                                 <h1 className='text-light'><a href='index.html'>Juan Diego</a></h1>
                             </div>
-                            <div class="flip-card-back">
+                            <div className="flip-card-back">
                                 <img src='src\assets\images\PandaDev.png' className='img-fluid rounded-circle mt-1' alt='' />
                                 <h1 className='text-light'><a href='index.html'>Panda Dev</a></h1>
                             </div>

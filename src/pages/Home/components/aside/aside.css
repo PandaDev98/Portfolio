@@ -15,8 +15,47 @@
     overflow-y: auto;
 }
 
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+.flip-card-back {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: start;
+}
+
+.flip-card-front {
+    z-index: 2;
+
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+
 #header .profile img {
-    margin: 15px auto;
+    margin: 0px auto;
     display: block;
     width: 120px;
     border: 8px solid #2c2f3f;

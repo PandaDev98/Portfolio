@@ -5,9 +5,23 @@ export const Aside = () => {
     return (
         <header id='header'>
             <div className='d-flex flex-column'>
-                <div className='profile'>
-                    <img src='src\assets\images\profile-img.jpg' className='img-fluid rounded-circle' alt='' />
-                    <h1 className='text-light'><a href='index.html'>Juan Diego</a></h1>
+                <div className='profile mt-2'>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+
+                                <img src='src\assets\images\profile-img.jpg' className='img-fluid rounded-circle' alt='' />
+                                <h1 className='text-light'><a href='index.html'>Juan Diego</a></h1>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src='src\assets\images\PandaDev.png' className='img-fluid rounded-circle mt-1' alt='' />
+                                <h1 className='text-light'><a href='index.html'>Panda Dev</a></h1>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                     <div className='social-links mt-3 text-center'>
                         <a href='https://www.linkedin.com/in/juan-diego-tovaria-castro-b806b4158/' target='blank' ><BsLinkedin /></a>
                         <a href='https://github.com/PandaDev98' target='blank' ><BsGithub /></a>

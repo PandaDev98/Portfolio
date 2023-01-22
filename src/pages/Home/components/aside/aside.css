@@ -85,6 +85,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    line-height: 1rem;
 }
 
 .nav-menu>ul>li {
@@ -95,6 +96,7 @@
 .nav-menu a {
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #a8a9b4;
     padding: 12px 15px;
     margin-bottom: 8px;
@@ -112,7 +114,7 @@
 .nav-menu .active>a,
 .nav-menu li:hover>a {
     text-decoration: none;
-    color: #fff;
+    color: #1072A1
 }
 
 .nav-menu a:hover i,

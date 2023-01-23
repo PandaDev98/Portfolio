@@ -4,7 +4,7 @@ import "./facts.css";
 
 export const Facts = () => {
 
-    const stackeholders =185;
+    const stackeholders = 185;
     const projects = 25;
     const supportHours = 1820;
     const teams = 6;
@@ -18,9 +18,7 @@ export const Facts = () => {
 
                 <div className="section-title">
                     <h2>Hechos</h2>
-                    <p>A lo largo de mi carrera laboral el trabajo en equipo, la escucha activa y el dar al cliente lo que quiere
-                        y necesita son de suma importancia, siendo estas habilidaddes que he venido fortaleciendo en varios factores
-                        principales siempre con la busqueda de la felicidad del cliente.</p>
+                    <p>A lo largo de mi carrera laboral, he desarrollado y aplicado habilidades esenciales como el trabajo en equipo, la escucha activa, la definición de requerimientos y la proyección de tiempos con el objetivo de garantizar la satisfacción del cliente final. Estas habilidades me han permitido colaborar eficazmente con mis compañeros de trabajo y entender las necesidades de los clientes para ofrecer soluciones eficaces y a tiempo.</p>
                 </div>
                 <div className="row no-gutters">
 
@@ -28,7 +26,7 @@ export const Facts = () => {
                         <div className="count-box">
                             <CountUp
                                 end={stackeholders}
-                                duration={calculateDelay(stackeholders,100)}
+                                duration={calculateDelay(stackeholders, 100)}
                                 delay={-1}
                                 enableScrollSpy={true}
                                 suffix={'+'}
@@ -55,7 +53,7 @@ export const Facts = () => {
                             <i className="icofont-live-support"></i>
                             <CountUp
                                 end={supportHours}
-                                duration={calculateDelay(supportHours,1500)}
+                                duration={calculateDelay(supportHours, 1500)}
                                 enableScrollSpy={true}
                                 separator={','}
                             />

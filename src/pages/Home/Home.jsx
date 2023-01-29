@@ -6,6 +6,9 @@ import { About } from './components/sections/about/About';
 import { Facts } from './components/sections/facts/Facts';
 import { Skills } from './components/sections/skills/Skills';
 import { Resume } from './components/sections/resume/Resume';
+import { Portfolio } from './components/sections/portfolio/Portfolio';
+
+
 export const Home = () => {
     return (
         <div id='parent'>
@@ -29,8 +32,8 @@ export const Home = () => {
 
 
                     <Resume />
-                              
 
+                    <Portfolio />
                     {/* <section id="contact" className="contact">
                         <div className="container">
 

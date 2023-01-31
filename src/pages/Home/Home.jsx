@@ -9,19 +9,36 @@ import { Resume } from './components/sections/resume/Resume';
 import { Portfolio } from './components/sections/portfolio/Portfolio';
 import config from '../../data/particles';
 import Particles from "react-tsparticles";
-import { useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 import { loadFull } from "tsparticles";
 import { Contact } from './components/sections/contact/Contact';
 import { SlArrowDown } from "react-icons/sl";
+import { useState } from 'react';
 
-SlArrowDown
 export const Home = () => {
+    const [text, setText] = useState("");
+
+    const targetTextArr = ['Programador', 'Diseñador','DBA', 'Freelance', 'Investigador'];
+
+
+    useEffect(() => {
+        let currentIndex = 0;
+        const type = async targetText => {
+            for (let i = 1; i <= targetText.length; i++) {
+                await new Promise(resolve => {
+                    setTimeout(resolve, 100);
+                });
+                setText(targetText.substring(0, i));
+            }
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % targetTextArr.length;
+                type(targetTextArr[currentIndex]);
+            }, 1000);
+        };
+        type(targetTextArr[currentIndex]);
+    }, []);
 
     const particlesInit = useCallback(async engine => {
-        console.log(engine);
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
         await loadFull(engine);
     }, []);
 
@@ -40,10 +57,10 @@ export const Home = () => {
 
                     <div className='hero-container' data-aos='fade-in'>
                         <h1>Juan Diego Tovaria</h1>
-                        <p>Soy <span className='typed' data-typed-items='Programador, Diseñador, Freelance, Investigador'></span></p>
+                        <p>Soy <span className='typed' data-typed-items='Programador, Diseñador, Freelance, Investigador'>{text}</span></p>
                     </div>
                     <div className="scrollDown pb-4">
-                        <SlArrowDown className='mb-2'/>
+                        <SlArrowDown className='mb-2' />
                         <span id='scroll'>SCROLL</span>
                     </div>
                 </section>

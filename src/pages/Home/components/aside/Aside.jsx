@@ -1,9 +1,16 @@
 import React from 'react'
 import "./aside.css";
 import { BsInstagram, BsGithub, BsLinkedin, BsHouse, BsPerson, BsFileEarmarkBarGraph, BsFolder2Open, BsEnvelope, BsCodeSlash } from "react-icons/bs";
+import { useState } from 'react';
+
 
 export const Aside = () => {
-    
+    const [focusedId, setFocusedId] = useState(1);
+
+    const handleClick = (id) => {
+        setFocusedId(id);
+    };
+
     return (
         <header id='header'>
             <div className='d-flex flex-column'>
@@ -35,11 +42,37 @@ export const Aside = () => {
 
                 <nav className='nav-menu'>
                     <ul>
-                        <li className='active'><a href='index.html'><BsHouse className='mx-2' /><span>Inicio</span></a></li>
-                        <li><a href='#about'><BsPerson className='mx-2' /> <span>Acerca de mi</span></a></li>
-                        <li><a href='#resume'><BsFileEarmarkBarGraph className='mx-2' /> <span>Resumen</span></a></li>
-                        <li><a href='#portfolio'><BsFolder2Open className='mx-2' /> Portfolio</a></li>
-                        <li><a href='#contact'><BsEnvelope className='mx-2' /> Contacto</a></li>
+                        <li
+                            className={focusedId === 1 ? 'active' : ''}
+                            onClick={() => handleClick(1)}
+                        >
+                            <a href='index.html'>
+                                <BsHouse className='mx-2' />
+                                Inicio
+                            </a>
+                        </li>
+                        <li
+                            className={focusedId === 2 ? 'active' : ''}
+                            onClick={() => handleClick(2)}
+                        >
+                            <a href='#about'><BsPerson className='mx-2' />
+                                Acerca de mi</a></li>
+                        <li
+                            className={focusedId === 3 ? 'active' : ''}
+                            onClick={() => handleClick(3)}
+                        >
+                            <a href='#resume'><BsFileEarmarkBarGraph className='mx-2' />
+                                Resumen</a></li>
+                        <li
+                            className={focusedId === 4 ? 'active' : ''}
+                            onClick={() => handleClick(4)}
+                        >
+                            <a href='#portfolio'><BsFolder2Open className='mx-2' /> Portfolio</a></li>
+                        <li
+                            className={focusedId === 5 ? 'active' : ''}
+                            onClick={() => handleClick(5)}
+                        >
+                            <a href='#contact'><BsEnvelope className='mx-2' /> Contacto</a></li>
 
                     </ul>
                 </nav>

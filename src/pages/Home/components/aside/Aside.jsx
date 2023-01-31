@@ -11,11 +11,11 @@ export const Aside = () => {
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
 
-                                <img src='src\assets\images\profile-img.jpg' className='img-fluid rounded-circle' alt='' />
+                                <img src='.\src\assets\images\profile-img.jpg' className='img-fluid rounded-circle' alt='' />
                                 <h1 className='text-light'><a href='index.html'>Juan Diego</a></h1>
                             </div>
                             <div className="flip-card-back">
-                                <img src='src\assets\images\PandaDev.png' className='img-fluid rounded-circle mt-1' alt='' />
+                                <img src='.\src\assets\images\PandaDev.png' className='img-fluid rounded-circle mt-1' alt='' />
                                 <h1 className='text-light'><a href='index.html'>Panda Dev</a></h1>
                             </div>
 

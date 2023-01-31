@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;

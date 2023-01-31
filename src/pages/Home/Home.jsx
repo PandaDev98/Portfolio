@@ -18,7 +18,7 @@ import { useState } from 'react';
 export const Home = () => {
     const [text, setText] = useState("");
 
-    const targetTextArr = ['Programador', 'Diseñador','DBA', 'Freelance', 'Investigador'];
+    const targetTextArr = ['Programador', 'Diseñador', 'DBA', 'Freelance', 'Investigador'];
 
 
     useEffect(() => {
@@ -39,6 +39,7 @@ export const Home = () => {
     }, []);
 
     const particlesInit = useCallback(async engine => {
+
         await loadFull(engine);
     }, []);
 
@@ -53,6 +54,7 @@ export const Home = () => {
                         id="particles-js"
                         options={config}
                         init={particlesInit}
+                        width={window.outerWidth}
                     />
 
                     <div className='hero-container' data-aos='fade-in'>

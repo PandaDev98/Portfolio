@@ -16,7 +16,7 @@ This project is a personal portfolio website built using React. It showcases my 
 - A contact form that allows visitors to easily get in touch with me
 - A section for my resume and professional experience
 
-## Screenshots... working on it
+
 Homepage
 Contact Form
 Portfolio

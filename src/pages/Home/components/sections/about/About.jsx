@@ -24,7 +24,7 @@ export const About = () => {
 
                 <div className="row align-items-center">
                     <div className="col-lg-4" data-aos="fade-right">
-                        <img src="src\assets\images\Me\TovsDev.png" className="img-fluid  shadow   bg-body-tertiary rounded " alt="a handsome developer" />
+                        <img src=".\images\Me\TovsDev.png" className="img-fluid  shadow   bg-body-tertiary rounded " alt="a handsome developer" />
                     </div>
                     <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                         <h2>Fullstack web developer</h2>

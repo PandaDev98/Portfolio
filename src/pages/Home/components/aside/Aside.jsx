@@ -3,6 +3,7 @@ import "./aside.css";
 import { BsInstagram, BsGithub, BsLinkedin, BsHouse, BsPerson, BsFileEarmarkBarGraph, BsFolder2Open, BsEnvelope, BsCodeSlash } from "react-icons/bs";
 
 export const Aside = () => {
+    
     return (
         <header id='header'>
             <div className='d-flex flex-column'>

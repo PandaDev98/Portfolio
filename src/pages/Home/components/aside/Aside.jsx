@@ -1,6 +1,7 @@
 import React from 'react'
 import "./aside.css";
-import { BsFacebook, BsInstagram, BsGithub, BsLinkedin, BsHouse, BsPerson, BsFileEarmarkBarGraph, BsFolder2Open, BsTerminal, BsEnvelope, BsCodeSlash } from "react-icons/bs";
+import { BsInstagram, BsGithub, BsLinkedin, BsHouse, BsPerson, BsFileEarmarkBarGraph, BsFolder2Open, BsEnvelope, BsCodeSlash } from "react-icons/bs";
+
 export const Aside = () => {
     return (
         <header id='header'>
@@ -37,7 +38,6 @@ export const Aside = () => {
                         <li><a href='#about'><BsPerson className='mx-2' /> <span>Acerca de mi</span></a></li>
                         <li><a href='#resume'><BsFileEarmarkBarGraph className='mx-2' /> <span>Resumen</span></a></li>
                         <li><a href='#portfolio'><BsFolder2Open className='mx-2' /> Portfolio</a></li>
-                        <li><a href='#services'><BsTerminal className='mx-2' /> Servicios</a></li>
                         <li><a href='#contact'><BsEnvelope className='mx-2' /> Contacto</a></li>
 
                     </ul>

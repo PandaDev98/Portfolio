@@ -1,4 +1,8 @@
+import { projects } from "../../../../../data/projects";
+import { ProjectView } from "../../../elements/sections/portfolio/ProjectView";
 import "./portfolio.css";
+
+
 export const Portfolio = () => {
     return (
         <section id="portfolio" className="portfolio section-bg">
@@ -12,37 +16,9 @@ export const Portfolio = () => {
 
                 <div className="container">
 
-                    <div className=" col-12 portfolio-container">
-                        <h1>Subaru</h1>
-                        <div className="projectDesc">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus minus velit autem libero repellendus laboriosam optio, adipisci, ratione ipsam inventore esse, corrupti hic quisquam at rem unde in fugit eius?</p>
-                        </div>
-                        <div className="projectTech">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus minus velit autem libero repellendus laboriosam optio, adipisci, ratione ipsam inventore esse, corrupti hic quisquam at rem unde in fugit eius?</p>
-                        </div>
-                        <div className="imgCarousel">
-                            <img className="img-fluid" src="src\assets\images\portfolioImages\CotizaTuSubaru\logosubaru.png" alt="" />
-                            <img src="src\assets\images\portfolioImages\CotizaTuSubaru\1.png" alt="" />
-                            <img src="src\assets\images\portfolioImages\CotizaTuSubaru\2.png" alt="" />
-                            <img src="src\assets\images\portfolioImages\CotizaTuSubaru\3.png" alt="" />
-                            <img src="src\assets\images\portfolioImages\CotizaTuSubaru\4.png" alt="" />
-                            <img src="src\assets\images\portfolioImages\CotizaTuSubaru\5.png" alt="" />
+                    <ProjectView projects={projects}/>
 
-                        </div>
 
-                    </div>
-
-                    <div className=" portfolio-container" >
-                        <h1>Subaru</h1>
-                        <div className="imgCarousel">
-                            <img className="img-fluid" src="src\assets\images\portfolioImages\CotizaTuSubaru\logosubaru.png" alt="" />
-                            <img src="src\assets\images\portfolioImages\CotizaTuSubaru\1.png" alt="" />
-                            <img src="src\assets\images\portfolioImages\CotizaTuSubaru\2.png" alt="" />
-                            <img src="src\assets\images\portfolioImages\CotizaTuSubaru\3.png" alt="" />
-                            <img src="src\assets\images\portfolioImages\CotizaTuSubaru\4.png" alt="" />
-                            <img src="src\assets\images\portfolioImages\CotizaTuSubaru\5.png" alt="" />
-                        </div>
-                    </div>
                 </div>
 
             </div>

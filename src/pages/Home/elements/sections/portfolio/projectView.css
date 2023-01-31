@@ -1,3 +1,5 @@
+
+
 .imgCarousel {
     display: flex;
     height: 280px;
@@ -5,6 +7,7 @@
     transform: translateX(0%);
     transition: all 1s ease-in-out;
     background: white;
+    z-index: 1;
 }
 
 .imgCarousel img {
@@ -71,4 +74,18 @@
     height: 100%;
     opacity: 1;
     filter: contrast(100%);
+}
+
+
+@media (max-width: 777px) {
+    .projectDesc, .projectTech{
+       display: contents;
+   }
+   .imgCarousel{
+    width: 100%;
+   }
+   .portfolio-container:hover .imgCarousel {
+    transform: translateX(0%);
+    opacity: 1;
+}
 }

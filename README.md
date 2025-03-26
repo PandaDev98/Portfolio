@@ -70,7 +70,7 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 ## 📧 Contact
 Feel free to reach out:
 - **Email**: juandiegotovaria@cemex.com
-- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/juan-diego-tovaria-castro-b806b4158/)
+- **LinkedIn**: [LinkedIn](https://www.linkedin.com/in/juan-diego-tovaria-castro-b806b4158/)
 
 
 ---

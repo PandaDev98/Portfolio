@@ -21,11 +21,6 @@ This project was built using the following technologies:
 - 📬 **Contact Form** – Allows visitors to reach out easily
 - ⚡ **Optimized Performance** – Built with Vite for fast loading speeds
 
-## 📸 Screenshots
-Here are some preview images of the project:
-
-![Homepage](https://your-image-link.com)
-
 ## 🌐 Live Demo
 Check out the live version of my portfolio: [Portfolio Website](https://pandadev98.github.io/Portfolio/)
 
@@ -33,25 +28,25 @@ Check out the live version of my portfolio: [Portfolio Website](https://pandadev
 To run this project locally, follow these steps:
 
 1. **Clone the repository**
-   ```sh
-   git clone https://github.com/PandaDev98/Portfolio.git
-   cd Portfolio
-   ```
+    ```sh
+    git clone [https://github.com/PandaDev98/Portfolio.git](https://github.com/PandaDev98/Portfolio.git)
+    cd Portfolio
+    ```
 
 2. **Install dependencies**
-   ```sh
-   npm install
-   ```
+    ```sh
+    npm install
+    ```
 
 3. **Run the development server**
-   ```sh
-   npm run dev
-   ```
+    ```sh
+    npm run dev
+    ```
 
 4. **Open in your browser**
-   ```
-   http://localhost:5173
-   ```
+    ```
+    http://localhost:5173
+    ```
 
 ## 🔧 Deployment
 This project is deployed using **GitHub Pages**. To deploy, run:
@@ -74,9 +69,9 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 
 ## 📧 Contact
 Feel free to reach out:
-- **Email**: your.email@example.com
-- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/yourprofile)
-- **Twitter**: [@yourhandle](https://twitter.com/yourhandle)
+- **Email**: juandiegotovaria@cemex.com
+- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/juan-diego-tovaria-castro-b806b4158/)
+
 
 ---
 ### ⭐ Show Your Support

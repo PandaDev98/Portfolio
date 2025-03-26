@@ -4,10 +4,10 @@ import "./facts.css";
 
 export const Facts = () => {
 
-    const stackeholders = 185;
-    const projects = 25;
-    const supportHours = 1820;
-    const teams = 6;
+    const stackeholders = 220;
+    const projects = 32;
+    const supportHours = 3888;
+    const teams = 8;
 
     const calculateDelay = (hours, countTime) => countTime / hours;
 

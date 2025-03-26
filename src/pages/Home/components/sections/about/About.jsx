@@ -19,7 +19,7 @@ export const About = () => {
             <div className="container">
                 <div className="section-title">
                     <h2>Acerca de mi</h2>
-                    <p>Desarrollador web full-stack, DBA y analista de datos con un conjunto de habilidades versátiles y pasión por la tecnología. Experiencia en tecnologías como Angular, React, JavaScript, Power BI y SQL. Constantemente en busca de nuevos desafíos y oportunidades para mejorar tanto habilidades cómo el conocimientos en el campo del desarrollo de aplicativos. Apasionado por el trabajo en equipo y la colaboración, enfocado por automatizar y simplificar procesos en beneficio de la comunidad. Impulsado ​​por el amor por la tecnología y el deseo de tener un impacto positivo.</p>
+                    <p>Soy un Ingeniero Informático con una sólida trayectoria en el desarrollo de soluciones de modelado de datos, desarrollo web y análisis de información. Mi experiencia abarca desde la implementación de proyectos de innovación utilizando tecnologías como Snowflake, SQL Server y Power BI, hasta la creación de aplicaciones web con JavaScript, TypeScript y C#. Apasionado por los desafíos y el trabajo en equipo, me destaco por mi enfoque orientado a resultados y mi constante búsqueda de aprendizaje en el dinámico mundo de la tecnología.</p>
                 </div>
 
                 <div className="row align-items-center">
@@ -27,17 +27,17 @@ export const About = () => {
                         <img src=".\images\Me\TovsDev.png" className="img-fluid  shadow   bg-body-tertiary rounded " alt="a handsome developer" />
                     </div>
                     <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <h2>Fullstack web developer</h2>
+                        <h2>Informatics Engineer - Data and Web Solutions</h2>
                         <p className="font-italic">
-                            Ingeniero en informatica colombiano, con amor por la lectura, el deporte, amante del viajar y conocer nuevas culturas, costumbres y tradiciones, apasionado por los largometrajes la musica HI-FI
+                            Ingeniero en informática colombiano, apasionado por la tecnología, los datos y la resolución de problemas. Disfruto mantenerme activo con el deporte y los desafíos físicos. Amante de la lectura, el cine y la música de alta fidelidad. Viajar y conocer nuevas culturas es una de mis mayores fuentes de aprendizaje y crecimiento. Siempre en búsqueda de nuevos retos que impulsen mi desarrollo personal y profesional.
                         </p>
                         <div className="row">
                             <div className="col-lg-6">
                                 <ul>
                                     <li><i className="icofont-rounded-right"></i> <strong>Nacimiento:</strong> 19 Nov 1998</li>
-                                    <li><i className="icofont-rounded-right"></i> <strong>Website:</strong> www.example.com</li>
                                     <li><i className="icofont-rounded-right"></i> <strong>Telefono:</strong> +57 3005944681</li>
                                     <li><i className="icofont-rounded-right"></i> <strong>Ciudad:</strong> Bogotá, colombia</li>
+                                    <li><i className="icofont-rounded-right"></i> <strong>Freelance: </strong> Disponible</li>
                                 </ul>
                             </div>
                             <div className="col-lg-6">
@@ -46,7 +46,6 @@ export const About = () => {
                                     <li><i className="icofont-rounded-right"></i> <strong>Titulo: </strong> Ingeniero en informática</li>
                                     <li><i className="icofont-rounded-right"></i> <strong>Correo: </strong>
                                         juandiegotovaria@hotmail.com</li>
-                                    <li><i className="icofont-rounded-right"></i> <strong>Freelance: </strong> Disponible</li>
                                 </ul>
                             </div>
                         </div>
